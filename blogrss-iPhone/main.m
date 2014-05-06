@@ -10,9 +10,17 @@
 
 #import "BRAppDelegate.h"
 
+#import <blogrsssdk/blogrsssdk.h>
+
 int main(int argc, char * argv[])
 {
+    [[BlogRSSSDK sharedSDK] start];
+    
+    int ret = 0;
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([BRAppDelegate class]));
+        ret = UIApplicationMain(argc, argv, nil, NSStringFromClass([BRAppDelegate class]));
     }
+    
+    [[BlogRSSSDK sharedSDK] stop];
+    return ret;
 }

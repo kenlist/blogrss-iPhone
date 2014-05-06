@@ -7,12 +7,20 @@
 //
 
 #import "BRAppDelegate.h"
+#import "BRViewController.h"
 
 @implementation BRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *navigationViewController = [[UINavigationController alloc] initWithRootViewController:[[BRViewController alloc] init]];
+    
+    self.window.rootViewController = navigationViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
