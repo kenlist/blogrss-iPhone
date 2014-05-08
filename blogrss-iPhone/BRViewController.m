@@ -7,8 +7,9 @@
 //
 
 #import "BRViewController.h"
+#import <blogrsssdk/blogrsssdk.h>
 
-@interface BRViewController ()
+@interface BRViewController() <BlogRSSSDKDelegate>
 
 @end
 
@@ -27,12 +28,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[BlogRSSSDK sharedSDK] fetchRSS];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onRSSFetchedWithRetCode:(int)retCode andRSSInfo:(NSArray *)rssData {
+  
 }
 
 @end

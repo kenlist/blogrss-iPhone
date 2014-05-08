@@ -18,11 +18,13 @@
 		5B5DBA7F19186D7000EE81F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA6119186D7000EE81F6 /* UIKit.framework */; };
 		5B5DBA8719186D7000EE81F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B5DBA8519186D7000EE81F6 /* InfoPlist.strings */; };
 		5B5DBA8919186D7000EE81F6 /* blogrss_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DBA8819186D7000EE81F6 /* blogrss_iPhoneTests.m */; };
-		5B5DBA9319186D8E00EE81F6 /* blogrsssdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA9219186D8E00EE81F6 /* blogrsssdk.framework */; };
 		5B5DBA9519186E1B00EE81F6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA9419186E1B00EE81F6 /* libstdc++.dylib */; };
 		5B5DBA9D1918743900EE81F6 /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DBA9B1918743900EE81F6 /* BRViewController.m */; };
 		5B5DBA9E1918743900EE81F6 /* BRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5DBA9C1918743900EE81F6 /* BRViewController.xib */; };
 		5B5DBAA0191876B700EE81F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5DBA9F191876B700EE81F6 /* Images.xcassets */; };
+		5B5DBC091919E76600EE81F6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBC081919E76600EE81F6 /* libsqlite3.dylib */; };
+		5B5DBC0B1919E7BC00EE81F6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBC0A1919E7BC00EE81F6 /* MobileCoreServices.framework */; };
+		5B5DCADB191B646E00EE81F6 /* blogrsssdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DCADA191B646E00EE81F6 /* blogrsssdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +53,14 @@
 		5B5DBA8419186D7000EE81F6 /* blogrss-iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blogrss-iPhoneTests-Info.plist"; sourceTree = "<group>"; };
 		5B5DBA8619186D7000EE81F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B5DBA8819186D7000EE81F6 /* blogrss_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blogrss_iPhoneTests.m; sourceTree = "<group>"; };
-		5B5DBA9219186D8E00EE81F6 /* blogrsssdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = blogrsssdk.framework; path = "../../chromium/chromium_ios/src/xcodebuild/Debug-iphoneos/blogrsssdk.framework"; sourceTree = "<group>"; };
 		5B5DBA9419186E1B00EE81F6 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		5B5DBA9A1918743900EE81F6 /* BRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
 		5B5DBA9B1918743900EE81F6 /* BRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
 		5B5DBA9C1918743900EE81F6 /* BRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRViewController.xib; sourceTree = "<group>"; };
 		5B5DBA9F191876B700EE81F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B5DBC081919E76600EE81F6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5B5DBC0A1919E7BC00EE81F6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5B5DCADA191B646E00EE81F6 /* blogrsssdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = blogrsssdk.framework; path = "../../chromium/chromium_ios/src/xcodebuild/Debug-iphoneos/blogrsssdk.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5DBC091919E76600EE81F6 /* libsqlite3.dylib in Frameworks */,
 				5B5DBA9519186E1B00EE81F6 /* libstdc++.dylib in Frameworks */,
+				5B5DBC0B1919E7BC00EE81F6 /* MobileCoreServices.framework in Frameworks */,
 				5B5DBA6019186D7000EE81F6 /* CoreGraphics.framework in Frameworks */,
+				5B5DCADB191B646E00EE81F6 /* blogrsssdk.framework in Frameworks */,
 				5B5DBA6219186D7000EE81F6 /* UIKit.framework in Frameworks */,
-				5B5DBA9319186D8E00EE81F6 /* blogrsssdk.framework in Frameworks */,
 				5B5DBA5E19186D7000EE81F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,8 +113,10 @@
 		5B5DBA5C19186D7000EE81F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B5DBC081919E76600EE81F6 /* libsqlite3.dylib */,
 				5B5DBA9419186E1B00EE81F6 /* libstdc++.dylib */,
-				5B5DBA9219186D8E00EE81F6 /* blogrsssdk.framework */,
+				5B5DCADA191B646E00EE81F6 /* blogrsssdk.framework */,
+				5B5DBC0A1919E7BC00EE81F6 /* MobileCoreServices.framework */,
 				5B5DBA5D19186D7000EE81F6 /* Foundation.framework */,
 				5B5DBA5F19186D7000EE81F6 /* CoreGraphics.framework */,
 				5B5DBA6119186D7000EE81F6 /* UIKit.framework */,
