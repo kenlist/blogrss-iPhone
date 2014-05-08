@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "BRAppDelegate.h"
-
 #import <blogrsssdk/blogrsssdk.h>
+#import "BRAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
-    [[BlogRSSSDK sharedSDK] start];
+    [[BlogRSSSDK sharedSDK] startWithArgc:argc andArgv:argv];
     
     int ret = 0;
     @autoreleasepool {
