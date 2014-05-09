@@ -12,11 +12,11 @@
 		4BBA7968191B87E50034750E /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBA7967191B87E50034750E /* libresolv.dylib */; };
 		4BBA79E2191C7A9D0034750E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBA79E1191C7A9D0034750E /* libxml2.dylib */; };
 		5B339AD5191C7F16002CB011 /* icudtl.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5B339AD4191C7F16002CB011 /* icudtl.dat */; };
-		5B339AD9191C7FAD002CB011 /* blogrsssdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B339AD8191C7FAD002CB011 /* blogrsssdk.framework */; };
 		5B339AE7191C8C43002CB011 /* BRArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B339AE5191C8C43002CB011 /* BRArticleCell.m */; };
 		5B339AE8191C8C43002CB011 /* BRArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B339AE6191C8C43002CB011 /* BRArticleCell.xib */; };
 		5B339AEC191C9E80002CB011 /* BRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B339AEA191C9E80002CB011 /* BRWebViewController.m */; };
 		5B339AED191C9E80002CB011 /* BRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B339AEB191C9E80002CB011 /* BRWebViewController.xib */; };
+		5B339B73191CB26D002CB011 /* blogrsssdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B339B72191CB26D002CB011 /* blogrsssdk.framework */; };
 		5B5DBA5E19186D7000EE81F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA5D19186D7000EE81F6 /* Foundation.framework */; };
 		5B5DBA6019186D7000EE81F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA5F19186D7000EE81F6 /* CoreGraphics.framework */; };
 		5B5DBA6219186D7000EE81F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5DBA6119186D7000EE81F6 /* UIKit.framework */; };
@@ -52,13 +52,14 @@
 		4BBA7967191B87E50034750E /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		4BBA79E1191C7A9D0034750E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		5B339AD4191C7F16002CB011 /* icudtl.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = icudtl.dat; sourceTree = "<group>"; };
-		5B339AD8191C7FAD002CB011 /* blogrsssdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = blogrsssdk.framework; path = "../../chromium/chromium_ios/src/xcodebuild/Debug-iphonesimulator/blogrsssdk.framework"; sourceTree = "<group>"; };
 		5B339AE4191C8C43002CB011 /* BRArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRArticleCell.h; sourceTree = "<group>"; };
 		5B339AE5191C8C43002CB011 /* BRArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRArticleCell.m; sourceTree = "<group>"; };
 		5B339AE6191C8C43002CB011 /* BRArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRArticleCell.xib; sourceTree = "<group>"; };
 		5B339AE9191C9E80002CB011 /* BRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = BRWebViewController.h; sourceTree = "<group>"; tabWidth = 4; };
 		5B339AEA191C9E80002CB011 /* BRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = BRWebViewController.m; sourceTree = "<group>"; tabWidth = 4; };
 		5B339AEB191C9E80002CB011 /* BRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRWebViewController.xib; sourceTree = "<group>"; };
+		5B339B72191CB26D002CB011 /* blogrsssdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = blogrsssdk.framework; path = "../../chromium/chromium_ios/src/xcodebuild/Debug-iphoneos/blogrsssdk.framework"; sourceTree = "<group>"; };
+		5B339B74191CB904002CB011 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		5B5DBA5A19186D7000EE81F6 /* blogrss-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blogrss-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5DBA5D19186D7000EE81F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B5DBA5F19186D7000EE81F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,7 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBA79E2191C7A9D0034750E /* libxml2.dylib in Frameworks */,
-				5B339AD9191C7FAD002CB011 /* blogrsssdk.framework in Frameworks */,
+				5B339B73191CB26D002CB011 /* blogrsssdk.framework in Frameworks */,
 				4BBA7968191B87E50034750E /* libresolv.dylib in Frameworks */,
 				4BBA7966191B87A80034750E /* SystemConfiguration.framework in Frameworks */,
 				5B5DBC091919E76600EE81F6 /* libsqlite3.dylib in Frameworks */,
@@ -139,11 +140,12 @@
 		5B5DBA5C19186D7000EE81F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B339B74191CB904002CB011 /* libc++.dylib */,
 				4BBA79E1191C7A9D0034750E /* libxml2.dylib */,
 				4BBA7967191B87E50034750E /* libresolv.dylib */,
 				5B5DBC081919E76600EE81F6 /* libsqlite3.dylib */,
 				5B5DBA9419186E1B00EE81F6 /* libstdc++.dylib */,
-				5B339AD8191C7FAD002CB011 /* blogrsssdk.framework */,
+				5B339B72191CB26D002CB011 /* blogrsssdk.framework */,
 				4BBA7965191B87A80034750E /* SystemConfiguration.framework */,
 				5B5DBC0A1919E7BC00EE81F6 /* MobileCoreServices.framework */,
 				5B5DBA5D19186D7000EE81F6 /* Foundation.framework */,
@@ -425,6 +427,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -457,6 +460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -469,10 +473,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphoneos",
-					"/Users/mengzheng/project/chromium/src/xcodebuild/Debug-iphonesimulator",
 					"$(PROJECT_DIR)/blogrss-iPhone",
-					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphonesimulator",
+					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "blogrss-iPhone/blogrss-iPhone-Prefix.pch";
@@ -494,15 +496,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphoneos",
-					"/Users/mengzheng/project/chromium/src/xcodebuild/Debug-iphonesimulator",
 					"$(PROJECT_DIR)/blogrss-iPhone",
-					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphonesimulator",
+					"/Users/kenlist/chromium/chromium_ios/src/xcodebuild/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "blogrss-iPhone/blogrss-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "blogrss-iPhone/blogrss-iPhone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

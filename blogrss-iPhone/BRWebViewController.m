@@ -22,7 +22,7 @@
   
     self.title = self.urlTitle;
     
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backItemClicked:)];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"<Back" style:UIBarButtonItemStylePlain target:self action:@selector(backItemClicked:)];
     self.navigationItem.leftBarButtonItem = backItem;
     self.navigationController.navigationBar.tintColor = [UIColor grayColor];
     
