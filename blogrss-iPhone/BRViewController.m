@@ -8,6 +8,7 @@
 
 #import "BRViewController.h"
 #import <blogrsssdk/blogrsssdk.h>
+#import <blogrsssdk/rssinfoitem.h>
 
 @interface BRViewController() <BlogRSSSDKDelegate>
 
@@ -39,8 +40,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)onRSSFetchedWithRetCode:(int)retCode andRSSInfo:(NSArray *)rssData {
-  
+- (void)onRSSFetchedWithRetCode:(int)retCode andRSSItems:(NSArray *)rssItems {
+    [rssItems enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        RSSInfoItem *rssItem = obj;
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        
+        NSString *pubDate = [dateFormatter stringFromDate:rssItem.pubDate];
+        
+        NSLog(@"title:%@ linke:%@ pubDate:%@", rssItem.title, rssItem.link, pubDate);
+    }];
 }
 
 @end
