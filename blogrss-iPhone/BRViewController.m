@@ -10,7 +10,9 @@
 #import <blogrsssdk/blogrsssdk.h>
 #import <blogrsssdk/rssinfoitem.h>
 
-@interface BRViewController() <BlogRSSSDKDelegate>
+@interface BRViewController() <UITableViewDelegate, UITableViewDataSource, BlogRSSSDKDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
@@ -29,7 +31,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-  
     [BlogRSSSDK sharedSDK].delegate = self;
     [[BlogRSSSDK sharedSDK] fetchRSS];
 }
@@ -51,6 +52,16 @@
         
         NSLog(@"title:%@ linke:%@ pubDate:%@", rssItem.title, rssItem.link, pubDate);
     }];
+}
+
+#pragma mark - UITableView Delegate & Data Source Method
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
 }
 
 @end
